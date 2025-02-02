@@ -5,11 +5,14 @@
 //     console.log('Я сыт');
 // }
 
-const hamburger = 2;
+const hamburger = 3;
 const fries = 1;
+const cola = 1;
 
-if (hamburger === 3 && fries) {
+console.log(hamburger === 3 && cola && fries);
+
+if (hamburger === 3 && cola === 1 && fries) {
     console.log('Все сыты');
 } else {
-    
+    console.log('Мы уходим');
 }
