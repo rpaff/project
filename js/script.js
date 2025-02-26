@@ -1,34 +1,31 @@
-/* Задание на урок:
+"use strict"
 
-1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+// const num = 50;
 
-2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
-отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит -
-возвращаем пользователя к вопросам опять. (К любой строке можно обратить как str.length - и получить её длину)
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Много');
+// } else {
+//     console.log('Ok!')
+// }
 
-3) При помощи условия проверить personalMovieDB.count, и если он меньше 10 - вывести сообщение
-"Просмотрено довольно мало фильмов" если от 10 */
-
-'use strict';
-
-const number0ffilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-
-const personalMovieDB = {
-    count: number0ffilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// (num === 50) ? console.log('Ok') : console.log('Error')
 
 
-for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-    b = prompt('На сколько оцените его?', '');
+const num = 50;
 
-    if ()
-
-    personalMovieDB.movies[a] = b;
+switch (num) {
+    case 49:
+        console.log('Неверно');
+        break;
+    case 100:
+        console.log('Неверно');
+        break;
+    case '50':
+        console.log('В точку!');
+        break; 
+    default: 
+        console.log('Не в этот раз');
+        break;
 }
-
-console.log(personalMovieDB);
