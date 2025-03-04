@@ -1,31 +1,41 @@
-"use strict"
+"use strict";
 
-// const num = 50;
+let num = 20;
 
-// if (num < 49) {
-//     console.log('Error');
-// } else if (num > 100) {
-//     console.log('Много');
-// } else {
-//     console.log('Ok!')
-// }
-
-// (num === 50) ? console.log('Ok') : console.log('Error')
-
-
-const num = '50';
-
-switch (num) {
-    case '49':
-        console.log('Неверно');
-        break;
-    case '100':
-        console.log('Неверно');
-        break;
-    case '50':
-        console.log('В точку!');
-        break; 
-    default: 
-        console.log('Не в этот раз');
-        break;
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
 }
+
+showFirstMessage("Hello World!");
+console.log(num);
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+function calc(a, b) {
+    return (a + b);
+}
+
+
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+const logger = function() {
+  console.log("Hello");
+};
+
+logger();
+
+const calc = (a, b) => { 
+    console.log('1');
+    return a + b;
+ };
