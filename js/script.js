@@ -1,13 +1,7 @@
-const usdCarr = 28;
-const eurCurr = 32;
-const discount = 0.9; 
+"use strict";
 
-function convert(amount, curr) {
-    return curr * amount;
+const number0fFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+function start() {
+    
 }
-
-function promotion(result) {
-    console.log(result * discount);
-}
-
-promotion(convert(500, usdCurr))
