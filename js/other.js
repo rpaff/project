@@ -1,26 +1,21 @@
 "use strict"
 
-function first() {
-    // Do something
-    setTimeout(function() {
-        console.log(1);
-    }, 500);
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
 }
 
-function second() {
-    console.log(2);
-} 
+// console.log(options.name);
 
-first();
-second();
+// delete options.name;
 
-function learnJS(lang, callback) {
-    console.log(`Я учу ${lang}`);
-    callback();
+// console.log(options);
+
+for (let key in options) {
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
 }
-
-function done() {
-    console.log('Я прошел этот урок');
-}
-
-learnJS('JavaScript', done );
