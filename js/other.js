@@ -44,5 +44,19 @@ const numbers = {
 const newNumbers = copy(numbers);
 
 newNumbers.a = 10;
+newNumbers.c.x = 10;
 
 console.log(newNumbers);
+console.log(numbers);
+
+const add = {
+    d: 17,
+    e: 20
+}
+
+const clone = Object.assign({}, add);
+
+clone.d = 20;
+
+console.log(add);
+console.log(clone);
